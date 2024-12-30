@@ -8,8 +8,8 @@ This is a solution to the [Expenses chart component challenge on Frontend Mentor
 
 ### Links
 
-- Solution URL: [Solution URL here](https://github.com/NDK1195/huddle-landing-page-with-single-introductory-section)
-- Live Site URL: [Live site URL here](https://ndk1195.github.io/huddle-landing-page-with-single-introductory-section/)
+- Solution URL: [Solution URL here](https://github.com/NDK1195/expenses-chart-component)
+- Live Site URL: [Live site URL here](https://ndk1195.github.io/expenses-chart-component/)
 
 ### Built with
 
