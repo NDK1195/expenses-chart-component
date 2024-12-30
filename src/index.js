@@ -54,7 +54,7 @@ data.forEach((item) => {
 
   bar.innerHTML = `
             <div
-              class="relative w-full rounded-[3px] bg-soft-red sm:rounded-[5px]"
+              class="relative w-full rounded-[3px] transition-colors sm:rounded-[5px]"
               style='height: ${height}px'>
               <!-- tooltip -->
               <div
@@ -70,9 +70,9 @@ data.forEach((item) => {
             `;
 
   if (item.amount === maxAmount) {
-    bar.children[0].classList.add("bg-cyan");
+    bar.children[0].classList.add("bg-cyan", "hover:bg-[#B4E0E5]");
   } else {
-    bar.children[0].classList.add("bg-soft-red");
+    bar.children[0].classList.add("bg-soft-red", "hover:bg-[#FF9B86]");
   }
 
   chart.appendChild(bar);
