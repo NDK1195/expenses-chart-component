@@ -1,14 +1,81 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" href="./src/output.css">
-  <title>Frontend Mentor | Expenses chart component</title>
-</head>
-<body>
-  <script src="./src/index.js"></script>
-</body>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./src/output.css" />
+    <title>Frontend Mentor | Expenses chart component</title>
+  </head>
+  <body class="grid min-h-dvh place-items-center bg-cream">
+    <div class="w-full max-w-[540px] px-4 sm:px-0">
+      <div
+        class="mb-4 flex items-center justify-between rounded-[20px] bg-soft-red pb-[22px] pl-5 pr-6 pt-5 sm:mb-6 sm:pb-[25px] sm:pl-8 sm:pr-[39px] sm:pt-[27px]"
+      >
+        <div class="flex flex-col gap-1 sm:gap-2">
+          <h2 class="text-[15px] leading-none text-white sm:text-lg">
+            My balance
+          </h2>
+          <p
+            class="text-2xl font-bold leading-none text-white sm:text-[32px] sm:text-very-pale-orange"
+          >
+            $921.48
+          </p>
+        </div>
+        <img src="./images/logo.svg" alt="logo" class="w-[60px] sm:w-[72px]" />
+      </div>
+      <div
+        class="rounded-[20px] bg-very-pale-orange px-5 py-6 sm:px-10 sm:pb-10 sm:pt-8"
+      >
+        <h1
+          class="mb-[52px] text-2xl font-bold leading-none text-dark-brown sm:mb-[66px] sm:text-[32px]"
+        >
+          Spending - Last 7 days
+        </h1>
+        <!-- chart -->
+        <div
+          class="mb-6 flex items-end justify-between gap-3 sm:mb-8 sm:gap-0"
+          id="chart"
+        ></div>
+        <!-- chart -->
+
+        <!-- horizontal line -->
+        <div class="mb-6 h-[2px] w-full rounded-[1px] bg-cream sm:mb-8"></div>
+        <!-- horizontal line -->
+
+        <!-- total -->
+        <div class="flex items-end justify-between">
+          <div class="flex flex-col gap-2 sm:gap-1">
+            <h2 class="text-[15px] leading-none text-medium-brown sm:text-lg">
+              Total this month
+            </h2>
+            <p
+              class="text-[30px] font-bold leading-none text-dark-brown sm:text-5xl"
+            >
+              $478.33
+            </p>
+          </div>
+          <div class="flex flex-col items-end gap-1 sm:gap-0">
+            <p
+              class="text-[15px] font-bold leading-none text-dark-brown sm:text-lg"
+            >
+              +2.4%
+            </p>
+            <h2 class="text-[15px] leading-none text-medium-brown sm:text-lg">
+              from last month
+            </h2>
+          </div>
+        </div>
+        <!-- total -->
+      </div>
+    </div>
+    <script type="module" src="./src/index.js"></script>
+  </body>
 </html>
