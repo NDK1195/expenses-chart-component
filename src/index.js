@@ -37,13 +37,12 @@ data.forEach((item) => {
   const bar = document.createElement("div");
 
   bar.classList.add(
-    "relative",
     "flex",
     "w-full",
     "flex-col",
     "items-center",
     "gap-[11px]",
-    "sm:max-w-[50.365px]",
+    "max-w-[50.365px]",
     "sm:gap-2",
     "group",
     "cursor-pointer",
@@ -55,7 +54,8 @@ data.forEach((item) => {
   bar.innerHTML = `
             <div
               class="relative w-full rounded-[3px] transition-colors sm:rounded-[5px]"
-              style='height: ${height}px'>
+              style="height: ${height}px"
+            >
               <!-- tooltip -->
               <div
                 class="absolute -top-12 left-1/2 hidden -translate-x-1/2 rounded-[3px] bg-dark-brown p-2 text-[15px] font-bold leading-none text-very-pale-orange group-hover:block sm:rounded-[5px] sm:text-lg"
